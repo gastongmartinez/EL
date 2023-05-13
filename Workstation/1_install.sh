@@ -103,24 +103,6 @@ PAQUETES=(
     'ebtables-services'
     'bridge-utils'
     'libguestfs'
-
-    ### Window Managers ###
-    #'qtile'
-    #'awesome'
-    #'nitrogen'
-    #'feh'
-    #'picom'
-    #'lxappearance'
-    #'jgmenu'
-    #'i3lock'
-    #'sway'
-    #'grimshot'
-    #'waybar'
-    #'wofi'
-    #'wlr-randr'
-    #'wlogout'
-    #'SwayNotificationCenter'
-    #'pavucontrol'
 )
  
 for PAQ in "${PAQUETES[@]}"; do
