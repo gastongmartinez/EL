@@ -66,6 +66,7 @@ PAQUETES=(
     'pandoc'
     'dconf-editor'
     'setroubleshoot'
+    'tmux'
 
     #### Redes ####
     'nmap'
