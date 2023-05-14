@@ -34,6 +34,7 @@ PAQUETES=(
 
     #### WEB ####
     'brave-browser'
+    'librewolf'
 
     #### Shells ####
     'zsh'
