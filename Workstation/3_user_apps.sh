@@ -35,7 +35,6 @@ flatpak --user install flathub com.axosoft.GitKraken -y
 flatpak --user install flathub io.gitlab.librewolf-community -y
 flatpak --user install flathub com.jetbrains.PyCharm-Community -y
 flatpak --user install flathub com.jetbrains.IntelliJ-IDEA-Community -y
-flatpak --user install flathub com.brave.Browser -y
 flatpak --user install flathub org.mozilla.Thunderbird -y
 flatpak --user install flathub com.google.Chrome -y
 flatpak --user install flathub org.gabmus.gfeeds -y

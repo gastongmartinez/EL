@@ -32,6 +32,9 @@ PAQUETES=(
     'gnome-shell-extension-pop-shell'
     'file-roller-nautilus'
 
+    #### WEB ####
+    'brave-browser'
+
     #### Shells ####
     'zsh'
     'dialog'
