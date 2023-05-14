@@ -44,28 +44,8 @@ flatpak --user install flathub org.gimp.GIMP -y
 flatpak --user install flathub org.inkscape.Inkscape -y
 flatpak --user install flathub org.sqlitebrowser.sqlitebrowser -y
 
-# Doom Emacs
-#if [ -d ~/.emacs.d ]; then
-#    rm -Rf ~/.emacs.d
-#fi
-#go install golang.org/x/tools/gopls@latest
-#go install github.com/fatih/gomodifytags@latest
-#go install github.com/cweill/gotests/...@latest
-#go install github.com/x-motemen/gore/cmd/gore@latest
-#go install golang.org/x/tools/cmd/guru@latest
-#pip install nose
-#git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-#~/.emacs.d/bin/doom install
-#sleep 5
-#rm -rf ~/.doom.d
-
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-
-# Anaconda
-#wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh
-#chmod +x Anaconda3-2023.03-Linux-x86_64.sh
-#./Anaconda3-2023.03-Linux-x86_64.sh
 
 # Bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
