@@ -34,7 +34,6 @@ flatpak --user install flathub com.github.neithern.g4music -y
 flatpak --user install flathub com.axosoft.GitKraken -y
 flatpak --user install flathub com.jetbrains.PyCharm-Community -y
 flatpak --user install flathub com.jetbrains.IntelliJ-IDEA-Community -y
-flatpak --user install flathub org.mozilla.Thunderbird -y
 flatpak --user install flathub org.gabmus.gfeeds -y
 flatpak --user install flathub net.sourceforge.chromium-bsu -y
 flatpak --user install flathub org.libretro.RetroArch -y
