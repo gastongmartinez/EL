@@ -72,6 +72,7 @@ PAQUETES=(
     'firewall-applet'
 
     #### DEV ####
+    'code'
     'git'
     'clang'
     'cmake'
