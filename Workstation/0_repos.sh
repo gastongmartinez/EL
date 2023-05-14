@@ -29,6 +29,9 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 # Librewolf
 dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 
+# Google Chrome
+sh -c 'echo -e "[google-chrome]\nname=google-chrome\nbaseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64\nenabled=1\ngpgcheck=1\ngpgkey=https://dl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/google-chrome.repo'
+
 # Configuracion DNF
 {
     echo 'fastestmirror=1'

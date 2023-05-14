@@ -35,6 +35,7 @@ PAQUETES=(
     #### WEB ####
     'brave-browser'
     'librewolf'
+    'google-chrome-stable'
 
     #### Shells ####
     'zsh'
