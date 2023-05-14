@@ -33,8 +33,6 @@ flatpak --user install flathub com.github.tchx84.Flatseal -y
 flatpak --user install flathub com.github.neithern.g4music -y
 flatpak --user install flathub com.axosoft.GitKraken -y
 flatpak --user install flathub org.gabmus.gfeeds -y
-flatpak --user install flathub net.sourceforge.chromium-bsu -y
-flatpak --user install flathub org.libretro.RetroArch -y
 flatpak --user install flathub io.mpv.Mpv -y
 flatpak --user install flathub org.videolan.VLC -y
 flatpak --user install flathub org.remmina.Remmina -y
