@@ -21,7 +21,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Flatpak
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak --user install flathub org.libreoffice.LibreOffice
+flatpak --user install flathub org.libreoffice.LibreOffice -y
 flatpak --user install flathub fr.handbrake.ghb -y
 flatpak --user install flathub md.obsidian.Obsidian -y
 flatpak --user install flathub com.mattjakeman.ExtensionManager -y
@@ -102,11 +102,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/
     echo 'setopt sharehistory'
     echo 'setopt incappendhistory'
     echo 'JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk'
+    echo 'if [ -e /home/gaston/.nix-profile/etc/profile.d/nix.sh ]; then . /home/gaston/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer'
     echo 'export PATH="$HOME/anaconda3/bin:$HOME/Apps/flutter/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$HOME/go/bin:$HOME/.emacs.d/bin:$PATH"'
 } >>~/.zshrc
 chsh -s /usr/bin/zsh
-
-#echo '#if [ -e /home/gaston/.nix-profile/etc/profile.d/nix.sh ]; then . /home/gaston/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer'
 
 # Paquetes Nix
 export NIXPKGS_ALLOW_UNFREE=1
