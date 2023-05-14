@@ -57,8 +57,6 @@ PAQUETES=(
     'neofetch'
     'lshw-gui'
     'powerline'
-    #'neovim'
-    #'python3-neovim'
     'emacs'
     'fd-find'
     'the_silver_searcher'
@@ -144,8 +142,6 @@ firewall-cmd --add-service=cockpit --permanent
 
 alternatives --set java /usr/lib/jvm/java-17-amazon-corretto/bin/java
 alternatives --set javac /usr/lib/jvm/java-17-amazon-corretto/bin/javac
-
-read -rp "Press enter to continue"
 
 ############################### GRUB ############################################
 git clone https://github.com/vinceliuice/grub2-themes.git
