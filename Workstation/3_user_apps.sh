@@ -35,16 +35,13 @@ flatpak --user install flathub com.axosoft.GitKraken -y
 flatpak --user install flathub org.gabmus.gfeeds -y
 flatpak --user install flathub io.mpv.Mpv -y
 flatpak --user install flathub org.videolan.VLC -y
-flatpak --user install flathub org.remmina.Remmina -y
 flatpak --user install flathub org.qbittorrent.qBittorrent -y
 flatpak --user install flathub org.flameshot.Flameshot -y
-flatpak --user install flathub net.sourceforge.Klavaro -y
 flatpak --user install flathub io.github.Qalculate -y
 flatpak --user install flathub com.calibre_ebook.calibre -y
 flatpak --user install flathub com.github.johnfactotum.Foliate -y
 flatpak --user install flathub org.gimp.GIMP -y
 flatpak --user install flathub org.inkscape.Inkscape -y
-flatpak --user install flathub org.filezillaproject.Filezilla -y
 flatpak --user install flathub org.sqlitebrowser.sqlitebrowser -y
 
 # Doom Emacs
@@ -112,12 +109,10 @@ nix-env -iA nixpkgs.pipenv
 nix-env -iA nixpkgs.lazygit
 nix-env -iA nixpkgs.terminus_font
 nix-env -iA nixpkgs.cascadia-code
-nix-env -iA nixpkgs.roboto
 nix-env -iA nixpkgs.fira-code
-nix-env -iA nixpkgs.caladea
 nix-env -iA nixpkgs.corefonts
 nix-env -iA nixpkgs.pgadmin4
-nix-env -iA nixpkgs.mysql80
+#nix-env -iA nixpkgs.mysql80
 nix-env -iA nixpkgs.mysql-workbench
 nix-env -iA nixpkgs.sqlite-analyzer
 

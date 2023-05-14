@@ -37,6 +37,7 @@ PAQUETES=(
     'librewolf'
     'google-chrome-stable'
     'thunderbird'
+    'remmina'
 
     #### Shells ####
     'zsh'
@@ -63,6 +64,7 @@ PAQUETES=(
     'neofetch'
     'lshw-gui'
     'powerline'
+    'klavaro'
     'emacs'
     'fd-find'
     'the_silver_searcher'
@@ -84,6 +86,7 @@ PAQUETES=(
     'cmake'
     'meson'
     'python3-pip'
+    'filezilla'
     'golang'
     'java-1.8.0-openjdk'
     'lldb'
@@ -95,6 +98,8 @@ PAQUETES=(
     #### Fuentes ####
     'fontawesome-fonts'
     'fontforge'
+    'google-roboto-fonts'
+    'ht-caladea-fonts'
 
     ### Bases de datos ###
     'postgresql-server'
