@@ -110,7 +110,7 @@ dconf write /org/gnome/desktop/interface/cursor-theme "'WhiteSur-cursors'"
 dconf write /org/gnome/desktop/interface/icon-theme "'WhiteSur-grey-dark'"
 
 # Wallpaper
-dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/wallpapers/Landscapes/landscapes%2001.jpg'"
+dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/wallpapers/Landscapes/landscapes%2022.jpg'"
 
 # Establecer fuentes
 dconf write /org/gnome/desktop/interface/font-name "'Noto Sans CJK HK 11'"
