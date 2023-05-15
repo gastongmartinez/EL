@@ -87,10 +87,6 @@ nix-env -iA nixpkgs.zsh-syntax-highlighting
 nix-env -iA nixpkgs.fzf
 nix-env -iA nixpkgs.pipenv
 nix-env -iA nixpkgs.lazygit
-nix-env -iA nixpkgs.terminus_font
-nix-env -iA nixpkgs.cascadia-code
-nix-env -iA nixpkgs.fira-code
-nix-env -iA nixpkgs.corefonts
 nix-env -iA nixpkgs.pgadmin4
 #nix-env -iA nixpkgs.mysql80
 nix-env -iA nixpkgs.mysql-workbench
