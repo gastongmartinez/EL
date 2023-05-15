@@ -149,7 +149,7 @@ git clone https://github.com/gastongmartinez/wallpapers.git
 mv -f wallpapers/ "/usr/share/backgrounds/"
 #################################################################################
 
-rm amazon-corretto-17-x64-linux-jdk.rpm
+rm ./*.rpm
 
 {
     echo "[User]"
