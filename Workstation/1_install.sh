@@ -18,10 +18,10 @@ USER=$(grep "1000" /etc/passwd | awk -F : '{ print $1 }')
 
 # Descarga de RPMs
 wget https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.rpm
-wget https://rpmfind.net/linux/fedora/linux/releases/34/Everything/x86_64/os/Packages/t/terminus-fonts-4.49.1-12.fc34.noarch.rpm
-wget https://rpmfind.net/linux/fedora/linux/releases/34/Everything/x86_64/os/Packages/c/cascadia-code-fonts-2102.25-1.fc34.noarch.rpm
-wget https://rpmfind.net/linux/fedora/linux/releases/34/Everything/x86_64/os/Packages/f/fira-code-fonts-5.2-3.fc34.noarch.rpm
-wget https://rpmfind.net/linux/fedora/linux/releases/34/Everything/x86_64/os/Packages/x/xorg-x11-font-utils-7.5-51.fc34.x86_64.rpm
+wget https://archivefedora.mirror.angkasa.id/fedora/linux/releases/34/Everything/x86_64/os/Packages/t/terminus-fonts-4.49.1-12.fc34.noarch.rpm
+wget https://archivefedora.mirror.angkasa.id/fedora/linux/releases/34/Everything/x86_64/os/Packages/c/cascadia-code-fonts-2102.25-1.fc34.noarch.rpm
+wget https://archivefedora.mirror.angkasa.id/fedora/linux/releases/34/Everything/x86_64/os/Packages/f/fira-code-fonts-5.2-3.fc34.noarch.rpm
+wget https://archivefedora.mirror.angkasa.id/fedora/linux/releases/34/Everything/x86_64/os/Packages/x/xorg-x11-font-utils-7.5-51.fc34.x86_64.rpm
 wget https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 ############################### Apps Generales ################################
