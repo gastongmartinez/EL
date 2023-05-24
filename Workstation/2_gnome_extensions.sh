@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
 R_USER=$(id -u)
-if [ "$R_USER" -eq 0 ];
-then
+if [ "$R_USER" -eq 0 ]; then
    echo "Este script debe usarse con un usuario regular."
    echo "Saliendo..."
    exit 1
 fi
 
-if [ -z "$DISPLAY" ];
-then
+if [ -z "$DISPLAY" ]; then
     echo -e "Debe ejecutarse dentro del entorno grafico.\n"
     echo "Saliendo..."
     exit 2

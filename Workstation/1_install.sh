@@ -2,8 +2,7 @@
 
 # Validacion del usuario ejecutando el script
 R_USER=$(id -u)
-if [ "$R_USER" -ne 0 ];
-then
+if [ "$R_USER" -ne 0 ]; then
     echo -e "\nDebe ejecutar este script como root o utilizando sudo.\n"
     exit 1
 fi

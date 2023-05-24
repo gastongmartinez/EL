@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+R_USER=$(id -u)
+if [ "$R_USER" -eq 0 ]; then
+   echo "Este script debe usarse con un usuario regular."
+   echo "Saliendo..."
+   exit 1
+fi
+
 if [ ! -d ~/Apps ]; then
     mkdir ~/Apps
 fi

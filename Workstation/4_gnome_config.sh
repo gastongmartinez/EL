@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
 R_USER=$(id -u)
-if [ "$R_USER" -eq 0 ];
-then
+if [ "$R_USER" -eq 0 ]; then
    echo "Este script debe usarse con un usuario regular."
    echo "Saliendo..."
    exit 1
 fi
 
-if [ -z "$DISPLAY" ];
-then
+if [ -z "$DISPLAY" ]; then
     echo -e "Debe ejecutarse dentro del entorno grafico.\n"
     echo "Saliendo..."
     exit 2
@@ -143,8 +141,7 @@ flatpak --user override --env=GTK_THEME=WhiteSur-Dark
 
 # AlmaLinux
 read -rp "Configurar imagenes AlmaLinux? (S/N): " AL
-if [ "$AL" == 'S' ]; 
-then
+if [ "$AL" == 'S' ]; then
     # ArcMenu
     dconf write /org/gnome/shell/extensions/arcmenu/custom-menu-button-icon "'/usr/share/backgrounds/wallpapers/Alma/icon.png'"
     dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Custom_Icon'"
