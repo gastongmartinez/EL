@@ -141,7 +141,7 @@ flatpak --user override --env=GTK_THEME=WhiteSur-Dark
 
 # AlmaLinux
 read -rp "Configurar imagenes AlmaLinux? (S/N): " AL
-if [ "$AL" == 'S' ]; then
+if [[ $AL =~ ^[Ss]$ ]]; then
     # ArcMenu
     dconf write /org/gnome/shell/extensions/arcmenu/custom-menu-button-icon "'/usr/share/backgrounds/wallpapers/Alma/icon.png'"
     dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Custom_Icon'"
