@@ -175,6 +175,25 @@ cd .. || return
 rm -rf grub2-themes
 #################################################################################
 
+############################### SESSIONS ########################################
+if [ ! -d /usr/share/xsessions/ignore ]; then
+    mkdir /usr/share/xsessions/ignore
+fi
+if [ ! -d /usr/share/wayland-sessions/ignore ]; then
+    mkdir /usr/share/wayland-sessions/ignore
+fi
+
+mv /usr/share/xsessions/xinit-compat.desktop /usr/share/xsessions/ignore/
+mv /usr/share/xsessions/gnome-classic* /usr/share/xsessions/ignore/
+mv /usr/share/xsessions/gnome-custom-session.desktop /usr/share/xsessions/ignore/
+mv /usr/share/wayland-sessions/gnome-classic* /usr/share/wayland-sessions/ignore/
+
+sed -i 's/Name\[es\]=Estándar (servidor gráfico X11)/Name\[es\]=Gnome Xorg/g' "/usr/share/xsessions/gnome.desktop"
+sed -i 's/Name\[es\]=Estándar (servidor gráfico X11)/Name\[es\]=Gnome Xorg/g' "/usr/share/xsessions/gnome-xorg.desktop"
+sed -i 's/Name\[es\]=Estándar (servidor gráfico Wayland)/Name\[es\]=Gnome Wayland/g' "/usr/share/wayland-sessions/gnome.desktop"
+sed -i 's/Name\[es\]=Estándar (servidor gráfico Wayland)/Name\[es\]=Gnome Wayland/g' "/usr/share/wayland-sessions/gnome-wayland.desktop"
+#################################################################################
+
 sleep 2
 
 reboot
