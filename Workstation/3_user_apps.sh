@@ -31,6 +31,7 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 flatpak --user install flathub com.mattjakeman.ExtensionManager -y
 flatpak --user install flathub com.github.tchx84.Flatseal -y
 flatpak --user install flathub com.github.neithern.g4music -y
+flatpak --user install flathub io.podman_desktop.PodmanDesktop -y
 
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
