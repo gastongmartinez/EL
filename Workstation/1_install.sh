@@ -168,11 +168,14 @@ alternatives --set java /usr/lib/jvm/java-17-amazon-corretto/bin/java
 alternatives --set javac /usr/lib/jvm/java-17-amazon-corretto/bin/javac
 
 ############################### GRUB ############################################
-git clone https://github.com/vinceliuice/grub2-themes.git
-cd grub2-themes || return
-./install.sh
-cd .. || return
-rm -rf grub2-themes
+read -rp "Instalar tema Grub? (S/N): " GB
+if [[ $GB =~ ^[Ss]$ ]]; then
+    git clone https://github.com/vinceliuice/grub2-themes.git
+    cd grub2-themes || return
+    ./install.sh
+    cd .. || return
+    rm -rf grub2-themes
+fi
 #################################################################################
 
 ############################### SESSIONS ########################################
