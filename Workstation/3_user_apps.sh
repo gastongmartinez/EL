@@ -69,24 +69,7 @@ sed -i 's/"font"/"powerline"/g' "$HOME/.bashrc"
 if [ ! -d ~/.local/share/zsh ]; then
     mkdir ~/.local/share/zsh
 fi
-touch ~/.zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/zsh/powerlevel10k
-{
-    echo 'source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme'
-    echo 'source /usr/share/autojump/autojump.zsh'
-    echo 'source ~/.local/state/nix/profiles/profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
-    echo 'source ~/.local/state/nix/profiles/profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
-    echo -e '\n# History in cache directory:'
-    echo 'HISTSIZE=10000'
-    echo 'SAVEHIST=10000'
-    echo 'HISTFILE=~/.cache/zshhistory'
-    echo 'setopt appendhistory'
-    echo 'setopt sharehistory'
-    echo 'setopt incappendhistory'
-    echo 'if [ -e /home/gaston/.nix-profile/etc/profile.d/nix.sh ]; then . /home/gaston/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer'
-    echo 'export LANG=en_US.UTF-8'
-    echo 'export PATH="$HOME/anaconda3/bin:$HOME/Apps/flutter/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$HOME/go/bin:$HOME/.emacs.d/bin:$PATH"'
-} >>~/.zshrc
 chsh -s /usr/bin/zsh
 
 # Paquetes Nix
@@ -125,6 +108,9 @@ nix-env -iA nixpkgs.pgadmin4
 nix-env -iA nixpkgs.mysql-workbench
 nix-env -iA nixpkgs.sqlite-analyzer
 
+go install golang.org/x/tools/gopls@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
 pip install black 'python-lsp-server[all]' pyright yamllint autopep8
 cargo install taplo-cli --locked
 cargo install stylua
