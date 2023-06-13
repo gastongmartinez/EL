@@ -22,6 +22,16 @@ make install
 cd "$DIRE" || return
 rm -rf ArcMenu
 
+# Sound output chooser
+git clone https://github.com/kgshank/gse-sound-output-device-chooser.git
+cp -r gse-sound-output-device-chooser/sound-output-device-chooser@kgshank.net ~/.local/share/gnome-shell/extensions/
+rm -rf "gse-sound-output-device-chooser"
+
+# Tweaks in system menu
+wget https://github.com/F-i-f/tweaks-system-menu/releases/download/v18/tweaks-system-menu@extensions.gnome-shell.fifi.org.v18.shell-extension.zip
+gnome-extensions install tweaks-system-menu@extensions.gnome-shell.fifi.org.v18.shell-extension.zip
+rm tweaks-system-menu@extensions.gnome-shell.fifi.org.v18.shell-extension.zip
+
 # Vitals
 git clone https://github.com/corecoding/Vitals.git ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com
 

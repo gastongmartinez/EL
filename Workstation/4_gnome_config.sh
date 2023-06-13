@@ -58,7 +58,7 @@ fi
 
 ############################################## Extensiones ##################################################################################
 # Activar extensiones
-dconf write /org/gnome/shell/enabled-extensions "['background-logo@fedorahosted.org', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'Vitals@CoreCoding.com', 'systemd-manager@hardpixel.eu', 'tiling-assistant@leleat-on-github', 'blur-my-shell@aunetx', 'no-overview@fthx', 'pop-shell@system76.com', 'dash-to-dock@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info']"
+dconf write /org/gnome/shell/enabled-extensions "['background-logo@fedorahosted.org', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'Vitals@CoreCoding.com', 'systemd-manager@hardpixel.eu', 'tiling-assistant@leleat-on-github', 'blur-my-shell@aunetx', 'no-overview@fthx', 'pop-shell@system76.com', 'dash-to-dock@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info', 'sound-output-device-chooser@kgshank.net', 'tweaks-system-menu@extensions.gnome-shell.fifi.org']"
 dconf write /org/gnome/shell/disabled-extensions "['dash-to-panel@jderose9.github.com']"
 
 # ArcMenu
@@ -91,6 +91,10 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
 dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/blur false
 dconf write /org/gnome/shell/extensions/blur-my-shell/blur-dash false
+
+# Sound Device Chooser
+dconf write /org/gnome/shell/extensions/sound-output-device-chooser/show-input-devices false
+dconf write /org/gnome/shell/extensions/sound-output-device-chooser/show-input-slider false
 
 dconf write /org/gnome/shell/disable-user-extensions false
 #############################################################################################################################################
