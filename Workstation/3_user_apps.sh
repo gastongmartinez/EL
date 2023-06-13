@@ -33,6 +33,23 @@ flatpak --user install flathub com.github.tchx84.Flatseal -y
 flatpak --user install flathub com.github.neithern.g4music -y
 flatpak --user install flathub io.podman_desktop.PodmanDesktop -y
 
+# Doom Emacs
+read -rp "Instalar Doom Emacs? (S/N): " DOOM
+if [[ $DOOM =~ ^[Ss]$ ]]; then
+    if [ -d ~/.emacs.d ]; then
+        rm -Rf ~/.emacs.d
+    fi
+    go install github.com/fatih/gomodifytags@latest
+    go install github.com/cweill/gotests/...@latest
+    go install github.com/x-motemen/gore/cmd/gore@latest
+    go install golang.org/x/tools/cmd/guru@latest
+    pip install nose
+    git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+    ~/.emacs.d/bin/doom install
+    sleep 5
+    rm -rf ~/.doom.d
+fi
+
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
