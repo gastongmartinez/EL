@@ -53,6 +53,14 @@ fi
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
+# Anaconda
+read -rp "Instalar Anaconda3? (S/N): " ANA
+if [[ $ANA =~ ^[Ss]$ ]]; then
+    wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh
+    chmod +x Anaconda3-2023.03-Linux-x86_64.sh
+    ./Anaconda3-2023.03-Linux-x86_64.sh
+fi
+
 # Bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 sed -i 's/"font"/"powerline"/g' "$HOME/.bashrc"
